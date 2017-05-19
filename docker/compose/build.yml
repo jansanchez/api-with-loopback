@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  nodeapi:
+    image: js/node-api
+    build:
+      context: ../node-api/
+      args:
+        USER: ${ENV_USER}
+        GID: ${ENV_GID}
+        UID: ${ENV_UID}
+  mysql:
+    image: lucydb
+    build:
+      context: ../lucydb/

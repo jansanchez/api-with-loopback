@@ -1,0 +1,27 @@
+{
+  "name": "favorite_companies",
+  "plural": "favorite_companies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "postulant_id": {
+      "type": "number",
+      "required": true
+    },
+    "company_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

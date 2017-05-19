@@ -1,0 +1,174 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2017-05-19T20:31:57.585Z",
+	"__export_source": "insomnia.desktop.app:v5.0.20",
+	"resources": [
+		{
+			"_id": "wrk_af20cd49c00d49c9b3fa8c95300858d9",
+			"parentId": null,
+			"modified": 1495214503473,
+			"created": 1495214503473,
+			"name": "Insomnia",
+			"description": "",
+			"certificates": [],
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_faa77ccc8cee495eb8cad54eccf066a1",
+			"parentId": "wrk_af20cd49c00d49c9b3fa8c95300858d9",
+			"modified": 1495214533215,
+			"created": 1495214533215,
+			"name": "Base Environment",
+			"data": {},
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_3ae838a94695449b8445e28d6b6ea957",
+			"parentId": "wrk_af20cd49c00d49c9b3fa8c95300858d9",
+			"modified": 1495225901832,
+			"created": 1495214541113,
+			"name": "Default Jar",
+			"cookies": [],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_65930fa3a88044f184777f44e84762aa",
+			"parentId": "wrk_af20cd49c00d49c9b3fa8c95300858d9",
+			"modified": 1495222569374,
+			"created": 1495222569374,
+			"name": "WSa",
+			"environment": {},
+			"metaSortKey": -1495222569374,
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_2b6b7bb8a814482ab08ec40f7b1e07c3",
+			"parentId": "fld_65930fa3a88044f184777f44e84762aa",
+			"modified": 1495225424832,
+			"created": 1495214533118,
+			"url": "http://172.18.60.46:3000/api/companies",
+			"name": "companies",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1495214533118,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_ccc600164ce644829cd766219e9f2d6d",
+			"parentId": "fld_65930fa3a88044f184777f44e84762aa",
+			"modified": 1495225681990,
+			"created": 1495215538190,
+			"url": "http://172.18.60.46:3000/api/companies",
+			"name": "companies",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"FASTCO\",\n\t\"slug\": \"fastco\",\n\t\"image\": \"http://cde.2.aptitus.com/logos/Company-4389-7624eac513732f39e2bbcd1745ec4a67_png_90x90_q80.png\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9519e1b8156d427b885fcb3a4f93ca6d"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1495214533018,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_ecf46cf7d6df41eb9e448ec0fec2f900",
+			"parentId": "fld_65930fa3a88044f184777f44e84762aa",
+			"modified": 1495225428864,
+			"created": 1495216090534,
+			"url": "http://172.18.60.46:3000/api/companies",
+			"name": "companies (With Filter)",
+			"method": "GET",
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "filter",
+					"value": "{\"where\":{\"slug\": \"bata-peru\"}}",
+					"id": "pair_7b2c1462757143fca12d8769028171f3"
+				}
+			],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_ea565b736e4045f396f488db1dec0b60"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1495214533068,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_f9951f5f2dd64bc488f3924ae3cb0a96",
+			"parentId": "fld_65930fa3a88044f184777f44e84762aa",
+			"modified": 1495225417075,
+			"created": 1495223158740,
+			"url": "http://172.18.60.46:3000/api/companies/999/favorites",
+			"name": "companies/favorites",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1495214533093,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_79425b59135549d19f6b86d9ce18a0f6",
+			"parentId": "fld_65930fa3a88044f184777f44e84762aa",
+			"modified": 1495225438385,
+			"created": 1495224327573,
+			"url": "http://172.18.60.46:3000/api/favorite_companies",
+			"name": "favorite companies",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n  \"postulant_id\": 999,\n  \"company_id\": 7\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9519e1b8156d427b885fcb3a4f93ca6d"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1495214532968,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		}
+	]
+}
