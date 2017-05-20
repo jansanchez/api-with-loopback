@@ -9,6 +9,12 @@ if [ ! -d $YARN_CACHE_DIR ]; then
   chmod -R 775 $YARN_CACHE_DIR
 fi
 
+if [ ! -d .volumes ]; then
+  echo "Creating ... .volumes folder."
+  mkdir .volumes
+  chmod -R 775 .volumes
+fi
+
 if [ -z "$ARGS" ]; then
   ARGS=deps
 fi
