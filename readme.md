@@ -30,6 +30,11 @@ make uplog
 docker-compose run api bash
 ```
 
+## Migration with docker exec
+```
+docker exec -i apiwithloopback_mysql_1 mysql -uroot -p123456 < ./db/wsa.sql
+```
+
 ## Loopback app
 ```
 lb

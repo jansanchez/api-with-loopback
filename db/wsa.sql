@@ -7,6 +7,8 @@
 -- Versión del servidor: 5.7.17
 -- Versión de PHP: 7.0.16
 
+USE wsa;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
