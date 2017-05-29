@@ -27,7 +27,7 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
-      PMA_HOST: wsa_mysql_1 # db host
+      PMA_HOST: apiwithloopback_mysql_1 # db host
       PMA_USER: root
       PMA_PASSWORD: 123456
     ports:
