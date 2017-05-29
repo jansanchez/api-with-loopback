@@ -5,7 +5,7 @@
     "file": "mydata.json"
   },
   "wsa": {
-    "host": "apiwithloopback_mysql_1",
+    "host": "wsa_mysql_1",
     "port": 3306,
     "url": "",
     "database": "wsa",
