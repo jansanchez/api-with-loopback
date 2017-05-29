@@ -1,7 +1,8 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "memory",
+    "file": "mydata.json"
   },
   "wsa": {
     "host": "wsa_mysql_1",

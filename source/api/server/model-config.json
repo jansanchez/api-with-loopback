@@ -36,7 +36,11 @@
     "dataSource": "wsa",
     "public": true
   },
-  "favorite_companies": {
+  "area": {
+    "dataSource": "wsa",
+    "public": true
+  },
+  "location": {
     "dataSource": "wsa",
     "public": true
   }
