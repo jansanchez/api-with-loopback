@@ -3,11 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: wsa_mysql_1
--- Tiempo de generación: 19-05-2017 a las 20:30:50
+-- Tiempo de generación: 29-05-2017 a las 21:45:29
 -- Versión del servidor: 5.7.17
 -- Versión de PHP: 7.0.16
-
-USE wsa;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -21,6 +19,51 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `wsa`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `area`
+--
+
+CREATE TABLE `area` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `slug` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `area`
+--
+
+INSERT INTO `area` (`id`, `name`, `slug`) VALUES
+(1, 'Atención al Cliente', 'atencion-al-cliente'),
+(2, 'Aduanas y Comercio Exterior', 'aduanas-y-comercio-exterior'),
+(3, 'Ingeniería', 'ingenieria'),
+(4, 'Legal', 'legal'),
+(5, 'Mantenimiento / Limpieza', 'mantenimiento-limpieza'),
+(6, 'Marketing / Publicidad / Comunicación', 'marketing-publicidad-comunicacion'),
+(7, 'Producción / Operaciones', 'produccion-operaciones'),
+(8, 'Proyectos', 'proyectos'),
+(9, 'Recursos Humanos', 'recursos-humanos'),
+(10, 'Oficios y Otros', 'oficios-y-otros'),
+(11, 'Almacén / Logística / Transporte', 'almacen-logistica-transporte'),
+(12, 'Administración, Contabilidad y Finanzas', 'administracion-contabilidad-y-finanzas'),
+(13, 'Comercial / Ventas', 'comercial-ventas'),
+(14, 'Call center / Telemarketing', 'call-center-telemarketing'),
+(15, 'Educación', 'educacion'),
+(16, 'Relaciones institucionales / públicas', 'relaciones-institucionales-publicas'),
+(17, 'Diseño / Artes gráficas', 'diseno-artes-graficas'),
+(18, 'Hotelería / Turismo', 'hoteleria-turismo'),
+(19, 'Gastronomía', 'gastronomia'),
+(20, 'Gerencia / Dirección', 'gerencia-direccion'),
+(21, 'Tecnología, Sistemas y Telecomunicaciones', 'tecnologia-sistemas-y-telecomunicaciones'),
+(22, 'Medicina / Salud', 'medicina-salud'),
+(23, 'Seguridad', 'seguridad'),
+(24, 'Construcción / Obra', 'construccion-obra'),
+(25, 'Investigación y Calidad', 'investigacion-y-calidad'),
+(26, 'Minería, Petróleo y Gas', 'mineria-petroleo-y-gas'),
+(27, 'Secretarias y Recepción', 'secretarias-y-recepcion');
 
 -- --------------------------------------------------------
 
@@ -68,9 +111,54 @@ CREATE TABLE `favorite_companies` (
   `company_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `location`
+--
+
+CREATE TABLE `location` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `slug` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `location`
+--
+
+INSERT INTO `location` (`id`, `name`, `slug`) VALUES
+(1, 'Cercado de Lima', 'cercado-de-lima'),
+(2, 'San Martin de Porres', 'san-martin-de-porres'),
+(3, 'Miraflores', 'miraflores'),
+(4, 'San Isidro', 'san-isidro'),
+(5, 'Santiago de Surco', 'santiago-de-surco'),
+(6, 'Callao', 'callao'),
+(7, 'Magdalena del mar', 'magdalena-del-mar'),
+(8, 'Lince', 'lince'),
+(9, 'San Borja', 'san-borja'),
+(10, 'Ate', 'ate'),
+(11, 'Surquillo', 'surquillo'),
+(12, 'Chorrillos', 'chorrillos'),
+(13, 'La Victoria', 'la-victoria'),
+(14, 'Jesus Maria', 'jesus-maria'),
+(15, 'San Juan de Lurigancho', 'san-juan-de-lurigancho'),
+(16, 'La Molina', 'la-molina'),
+(17, 'Villa el Salvador', 'villa-el-salvador'),
+(18, 'Villa Maria del Triunfo', 'villa-maria-del-triunfo'),
+(19, 'Emiratos Arabes Unidos', 'emiratos-arabes-unidos'),
+(20, 'Breña', 'breña'),
+(21, 'San Luis', 'san-luis');
+
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `area`
+--
+ALTER TABLE `area`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `companies`
@@ -86,9 +174,20 @@ ALTER TABLE `favorite_companies`
   ADD KEY `fk_company_id` (`company_id`);
 
 --
+-- Indices de la tabla `location`
+--
+ALTER TABLE `location`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
+--
+-- AUTO_INCREMENT de la tabla `area`
+--
+ALTER TABLE `area`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT de la tabla `companies`
 --
@@ -99,6 +198,11 @@ ALTER TABLE `companies`
 --
 ALTER TABLE `favorite_companies`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `location`
+--
+ALTER TABLE `location`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- Restricciones para tablas volcadas
 --
