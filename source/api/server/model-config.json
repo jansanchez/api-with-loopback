@@ -43,5 +43,9 @@
   "location": {
     "dataSource": "wsa",
     "public": true
+  },
+  "terms": {
+    "dataSource": "wsa",
+    "public": true
   }
 }

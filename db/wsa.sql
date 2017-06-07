@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: wsa_mysql_1
--- Tiempo de generación: 29-05-2017 a las 21:45:29
+-- Tiempo de generación: 07-06-2017 a las 19:39:16
 -- Versión del servidor: 5.7.17
 -- Versión de PHP: 7.0.16
 
@@ -150,6 +150,95 @@ INSERT INTO `location` (`id`, `name`, `slug`) VALUES
 (20, 'Breña', 'breña'),
 (21, 'San Luis', 'san-luis');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `terms`
+--
+
+CREATE TABLE `terms` (
+  `id` int(11) NOT NULL,
+  `keyword` varchar(250) NOT NULL,
+  `count` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `terms`
+--
+
+INSERT INTO `terms` (`id`, `keyword`, `count`) VALUES
+(1, 'compras', 745),
+(2, 'recepcionista', 653),
+(3, 'tottus', 555),
+(4, 'asistente administrativo', 539),
+(5, 'gerente', 517),
+(6, 'bcp', 511),
+(7, 'asistente', 503),
+(8, 'ripley', 496),
+(9, 'jefe', 463),
+(10, 'latam', 449),
+(11, 'logistica', 449),
+(12, 'hse', 447),
+(13, 'cajera', 445),
+(24, 'secretaria', 430),
+(25, 'chofer', 408),
+(26, 'tesoreria', 405),
+(27, 'interbank', 399),
+(28, 'planeamiento', 398),
+(29, 'importaciones', 379),
+(30, 'cadista', 377),
+(31, 'digitador', 375),
+(32, 'practicante', 361),
+(33, 'contabilidad', 360),
+(34, 'coordinador', 345),
+(35, 'ambiental', 333),
+(36, 'planner', 330),
+(37, 'comercio exterior', 326),
+(38, 'supervisor', 324),
+(41, 'almacen', 321),
+(42, 'marketing', 320),
+(43, 'exportaciones', 320),
+(44, 'administrador', 318),
+(45, 'cajero', 315),
+(46, 'comunicaciones', 310),
+(49, 'part time', 310),
+(50, 'full time', 309),
+(51, 'aeropuerto', 305),
+(52, 'archivo', 302),
+(53, 'recursos humanos', 302),
+(54, 'seguridad', 301),
+(55, 'atencion al cliente', 290),
+(56, 'saga falabella', 285),
+(57, 'adidas', 270),
+(58, 'android', 265),
+(59, 'developer', 260),
+(60, 'ios', 250),
+(61, 'backend', 250),
+(62, 'qa', 250),
+(63, 'qa engineer', 250),
+(64, 'jefe de proyectos', 250),
+(65, 'líder técnico', 250),
+(66, 'gerente de marketing', 250),
+(67, 'gerente de sistemas', 250),
+(70, 'android developer', 250),
+(71, 'ios develoeper', 250),
+(72, 'backend developer', 250),
+(73, 'frontend developer', 250),
+(74, 'front-end developer', 250),
+(76, 'conserje', 472),
+(78, 'portero', 447),
+(79, 'sig', 400),
+(80, 'sst', 400),
+(81, 'alicorp', 357),
+(82, 'backus', 350),
+(84, 'gloria', 400),
+(85, 'arquitectura', 400),
+(86, 'derecho', 400),
+(87, 'comprador', 400),
+(88, 'universidad', 400),
+(89, 'makro', 400),
+(90, 'madrugada', 350);
+
 --
 -- Índices para tablas volcadas
 --
@@ -180,6 +269,13 @@ ALTER TABLE `location`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `terms`
+--
+ALTER TABLE `terms`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `keyword` (`keyword`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -203,6 +299,11 @@ ALTER TABLE `favorite_companies`
 --
 ALTER TABLE `location`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+--
+-- AUTO_INCREMENT de la tabla `terms`
+--
+ALTER TABLE `terms`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 --
 -- Restricciones para tablas volcadas
 --

@@ -1,0 +1,27 @@
+{
+  "name": "terms",
+  "plural": "terms",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "keyword": {
+      "type": "string",
+      "required": true
+    },
+    "count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
