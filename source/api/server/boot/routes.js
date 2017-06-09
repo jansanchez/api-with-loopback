@@ -12,12 +12,6 @@ module.exports = function(app) {
       json: true
     };
 
-    var optionsForAreas = options;
-    optionsForAreas.uri = domain + 'areas';
-
-    var optionsForLocations = options;
-    optionsForLocations.uri = domain + 'locations';
-
     json.status = 'SUCCESS';
     json.code = 200;
     json.message = 'synchronize executed successful';
@@ -31,6 +25,9 @@ module.exports = function(app) {
         json.error = err;
       });
 
+    var optionsForAreas = options;
+    optionsForAreas.uri = domain + 'areas';
+
     rp(optionsForAreas)
       .then(function (areas) {
         json.data.areas = areas;
@@ -38,6 +35,9 @@ module.exports = function(app) {
       .catch(function (err) {
         json.error = err;
       });
+
+    var optionsForLocations = options;
+    optionsForLocations.uri = domain + 'locations';
 
     rp(optionsForLocations)
       .then(function (locations) {
