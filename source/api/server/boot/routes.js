@@ -1,5 +1,5 @@
 var rp = require('request-promise');
-var domain = 'http://192.168.2.6:3000/api/';
+var domain = 'http://192.168.2.2:3000/api/';
 var json = {};
 
 module.exports = function(app) {
