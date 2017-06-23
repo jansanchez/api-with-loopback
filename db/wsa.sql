@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: wsa_mysql_1
--- Tiempo de generación: 07-06-2017 a las 19:39:16
+-- Tiempo de generación: 23-06-2017 a las 22:47:01
 -- Versión del servidor: 5.7.17
 -- Versión de PHP: 7.0.16
 
@@ -84,9 +84,9 @@ CREATE TABLE `companies` (
 
 INSERT INTO `companies` (`id`, `name`, `slug`, `image`) VALUES
 (1, 'MCDONALDS', 'mcdonalds', 'http://cde.2.aptitus.com/logos/Company-3003-aa316d9675df0639dd24ace6ef98dfda_JPG_90x90_q80.JPG'),
-(2, 'ADECCO', 'adecco', 'http://cde.2.aptitus.com/logos/Company-7660-3a6244f435151fa7a2afbdaa541f0aee_png_90x90_q80.png'),
+(2, 'Coca-Cola', 'valestore', 'http://cde.pre.4a.aptitus.com/logos/Company-3926-cf2d1e4c5fe920c8f79daf8cffbc8121_png_90x90_q80.png?v=201706121803'),
 (3, 'PROSEGUR', 'prosegur', 'http://cde.2.aptitus.com/logos/Company-4349-01f27f8cf4d9771a59d98c5d397dd45d_jpg_90x90_q80.jpg'),
-(4, 'MCM SERVICIOS TOTALES', 'mcm-servicios-totales', 'http://cde.2.aptitus.com/logos/Company-7751-de704425319339c8291a5a1bdb00d664_png_90x90_q80.png'),
+(4, 'Trans Solutions Systems', 'trans-solutions-systems', 'http://cde.pre.4a.aptitus.com/logos/Company-5557-6ecf47c9a58f56ba40e296e8aa460d7d_jpg_90x90_q80.jpg'),
 (5, 'CORPORACIÓN INTERNACIONAL ', 'corporacion-internacional', 'http://cde.2.aptitus.com/logos/Company-9907-5f4cc0fe44bf9025245b36beeb557b96_png_90x90_q80.png'),
 (6, 'BATA PERU', 'bata-peru', 'http://cde.2.aptitus.com/logos/Company-2407-4ea0b15abd13061f0dfb03c2d4951255_png_90x90_q80.png?v=201705111524'),
 (7, 'WURTH PERU', 'wurth-peru', 'http://cde.2.aptitus.com/logos/Company-3778-2110fd7036e263b5345706eb969a6067_jpg_90x90_q80.jpg'),
@@ -97,7 +97,8 @@ INSERT INTO `companies` (`id`, `name`, `slug`, `image`) VALUES
 (12, 'AUTOMOTORES GILDEMEISTER', 'automotores-gildemeister', 'http://cde.2.aptitus.com/logos/Company-4728-e7fe93acaef558a1174c56e5fdf93bc4_png_90x90_q80.png'),
 (13, 'LATAM AIRLINES', 'latam-airlines', 'http://cde.2.aptitus.com/logos/Company-8949-6dfe6e5ddd602390a698d5cccf147114_jpg_90x90_q80.jpg?v=201705111524'),
 (14, 'GRUPO EL COMERCIO', 'grupo-el-comercio', 'http://cde.2.aptitus.com/logos/Company-1440-1b20087040795880e8f4cd37ad9fbff2_jpg_90x90_q80.jpg?v=201705111524'),
-(15, 'FASTCO', 'fastco', 'http://cde.2.aptitus.com/logos/Company-4389-7624eac513732f39e2bbcd1745ec4a67_png_90x90_q80.png');
+(15, 'FASTCO', 'fastco', 'http://cde.2.aptitus.com/logos/Company-4389-7624eac513732f39e2bbcd1745ec4a67_png_90x90_q80.png'),
+(16, 'ValeStore', 'valestore', 'http://cde.pre.4a.aptitus.com/logos/Company-7878-55c625a1506464ae1af37e4dd5e69302_jpg_90x90_q80.jpg');
 
 -- --------------------------------------------------------
 
@@ -148,7 +149,8 @@ INSERT INTO `location` (`id`, `name`, `slug`) VALUES
 (18, 'Villa Maria del Triunfo', 'villa-maria-del-triunfo'),
 (19, 'Emiratos Arabes Unidos', 'emiratos-arabes-unidos'),
 (20, 'Breña', 'breña'),
-(21, 'San Luis', 'san-luis');
+(21, 'San Luis', 'san-luis'),
+(22, 'Los Olivos', 'los-olivos');
 
 -- --------------------------------------------------------
 
@@ -288,7 +290,7 @@ ALTER TABLE `area`
 -- AUTO_INCREMENT de la tabla `companies`
 --
 ALTER TABLE `companies`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT de la tabla `favorite_companies`
 --
@@ -298,7 +300,7 @@ ALTER TABLE `favorite_companies`
 -- AUTO_INCREMENT de la tabla `location`
 --
 ALTER TABLE `location`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT de la tabla `terms`
 --
