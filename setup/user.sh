@@ -7,6 +7,6 @@ adduser $1
 groups $1
 usermod -aG sudo $1
 
-echo "Edit /etc/sudoers with..."
+echo "vim /etc/sudoers"
 echo "root    ALL=(ALL:ALL) ALL"
 echo "$1 ALL=(ALL:ALL) ALL"
