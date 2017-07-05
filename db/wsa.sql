@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: wsa_mysql_1
--- Tiempo de generación: 23-06-2017 a las 22:47:01
+-- Tiempo de generación: 05-07-2017 a las 17:35:43
 -- Versión del servidor: 5.7.17
 -- Versión de PHP: 7.0.16
 
@@ -147,7 +147,6 @@ INSERT INTO `location` (`id`, `name`, `slug`) VALUES
 (16, 'La Molina', 'la-molina'),
 (17, 'Villa el Salvador', 'villa-el-salvador'),
 (18, 'Villa Maria del Triunfo', 'villa-maria-del-triunfo'),
-(19, 'Emiratos Arabes Unidos', 'emiratos-arabes-unidos'),
 (20, 'Breña', 'breña'),
 (21, 'San Luis', 'san-luis'),
 (22, 'Los Olivos', 'los-olivos');
